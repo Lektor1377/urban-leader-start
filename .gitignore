@@ -1,0 +1,70 @@
+# ----------------------
+# Bitrix system folders
+# ----------------------
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/stack_cache/
+/bitrix/html_pages/
+/bitrix/updates/
+/bitrix/backup/
+/bitrix/tmp/
+/bitrix/restore/
+
+# ----------------------
+# Uploads (images, docs)
+# ----------------------
+/upload/*
+!/upload/.htaccess
+
+# ----------------------
+# Bitrix logs & sessions
+# ----------------------
+/bitrix/php_interface/dbconn.php
+/bitrix/php_interface/after_connect.php
+/bitrix/php_interface/sess_*
+/bitrix/modules/*/install/db/*.sql
+
+# ----------------------
+# Composer
+# ----------------------
+/vendor/
+
+# ----------------------
+# Node / Tailwind / Webpack / Markup
+# ----------------------
+/markup/node_modules/
+/markup/dist/
+/markup/.cache/
+/markup/.tmp/
+/markup/.vite/
+/markup/package-lock.json
+
+# Если используешь yarn
+/yarn.lock
+
+# ----------------------
+# Environment
+# ----------------------
+.env
+.env.local
+.env.production
+.env.development
+/.idea/
+/.vscode/
+/*.DS_Store
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+/logs/
+/local/logs/
+
+# ----------------------
+# Docker
+# ----------------------
+/docker/*.log
+/docker/mysql/
+/docker/redis/
+/docker/nginx/logs/
+/docker/php/logs/
